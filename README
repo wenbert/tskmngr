@@ -1,0 +1,23 @@
+This is an Task Manager Web App.
+
+User
+- Add Project
+-- Add Task
+-- Add Task Rate
+
+- Share Project
+-- Allow users to edit
+-- Allow users to view
+
+The UI(?)
+- Project
+- Task (Dropdown)
+- Task Description
+- Date
+- Time Start
+- Time End
+- Total Hours
+- Rate
+- Line Total
+- Related Email (Gmail)
+
