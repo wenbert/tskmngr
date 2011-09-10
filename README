@@ -1,16 +1,13 @@
 This is an Task Manager Web App.
 
 User
-- Add Project
--- Add Task
--- Add Task Rate
-
-- Share Project
--- Allow users to edit
--- Allow users to view
+- Add Client
+-- Add Worklog
+--- Add Task
+--- Add Task Rate
 
 The UI(?)
-- Project
+Worklog
 - Task (Dropdown)
 - Task Description
 - Date
@@ -19,5 +16,6 @@ The UI(?)
 - Total Hours
 - Rate
 - Line Total
+- Is Billed?
 - Related Email (Gmail)
 
