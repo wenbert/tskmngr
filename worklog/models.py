@@ -3,10 +3,13 @@ from django.db import models
 # Create your models here.
 
 class Worklog(models.Model):
-    unique_id = models.CharField(max_length=10)
     title = models.CharField(max_length=200)
     desc  = models.TextField()
-    pub_date = models.DateTimeField('date published')
+    pub_date = models.DateTimeField('date published', auto_now=True, \
+                auto_now_add=True)
+
+    def __unicode__(self):
+        return self.title
 
 class Logdetail(models.Model):
     worklog     = models.ForeignKey(Worklog)
@@ -17,5 +20,8 @@ class Logdetail(models.Model):
                     max_digits=19, decimal_places=2)
     log_amount  = models.DecimalField('Line Amount', \
                     max_digits=19, decimal_places=2)
-    comments    = modeks.TextField()
+    comments    = models.TextField()
+
+    def  __unicode__(self):
+        return self.comments
     
