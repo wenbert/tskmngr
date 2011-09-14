@@ -19,7 +19,8 @@ def create(request):
 
             #save here
 
-            return HttpResponseRedirect('/saved/')
+            #return HttpResponseRedirect('/saved/')
+            return HttpResponseRedirect(request.path)
     else:
         form = CreateWorklogForm()
     
