@@ -5,6 +5,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.utils.encoding import smart_str
 from django.template import Context, loader, RequestContext
 from django.contrib.auth.decorators import permission_required, login_required
+from django.http import HttpResponseRedirect, HttpResponse
 from worklog.models import *
 from worklog.forms import *
 
