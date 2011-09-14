@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Create Worklog{% endblock %}
+{% block page_name %}Create Worklog{% endblock %}
+{% block content %}
+This is a form where you can create your worklog.
+<form action="/worklog/create/" method="post">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>
+{% endblock %}
