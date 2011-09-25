@@ -19,9 +19,13 @@ def create(request):
             desc = form.cleaned_data['desc']
 
             #save here
+            w = Worklog(
+                title = title,
+                desc = desc,
+            )
+            w.save()
 
-            #return HttpResponseRedirect('/saved/')
-            return HttpResponseRedirect(request.path)
+            return HttpResponseRedirect('/worklog/')
     else:
         form = CreateWorklogForm()
     
